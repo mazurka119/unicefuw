@@ -1,0 +1,212 @@
+:root {
+    font-family: Inter,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+    font-size: 20px;
+    --blur: 100;
+    --opacity: 0;
+}
+.indent {
+  margin-left: 30px !important;
+}
+body {
+    padding: 0;
+    margin: 0;
+}
+.technologies {
+  color: #546e9e  ;
+  opacity: 1 !important;
+}
+.container {
+    height: 200vh;
+}
+.sticky {
+    font-size: 4rem;
+    font-weight: bold;
+    letter-spacing: -0.03em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    position: sticky;
+    top: 0;
+    filter: blur(calc(var(--blur) * 1px));
+}
+span {
+    opacity: var(--opacity);
+    transition: transform .2s !important;
+}
+.section-2 {
+  margin: 0 auto;
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: -1.2px;
+  color: rgb(0, 0, 0);
+  line-height: 1.22em;
+  width: 800px;
+}
+
+.section-2 span {
+--opacity: 0.3;
+opacity: var(--opacity);
+}
+
+.pro {
+  display: block;
+  margin-top: 2.2rem;
+}
+
+.flex-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.flex-item {
+  background: white;
+  padding: 5px;
+  width: 200px;
+  height: 150px;
+  margin-top: 10px;
+  line-height: 150px;
+  color: white;
+  font-weight: bold;
+  font-size: 2em;
+  text-align: center;
+}
+.final-section {
+  padding-top: 30%;
+  font-size: 1.1rem;
+}
+.container-2 {
+  padding-bottom: 300px !important;
+}
+a {
+  text-decoration: none;
+  color:blue;
+}
+
+a:visited {
+  color: #1CABE2 !important;
+}
+
+span:hover {
+  transform: scale(1.2) !important;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
+  html {
+    transform: rotate(-90deg);
+    transform-origin: left top;
+    width: 100vh;
+    overflow-x: hidden;
+    position: absolute;
+    top: 100%;
+    left: 0;
+  }
+}
+
+@media screen and (max-width: 767px){
+  .sticky {
+    font-size: 5rem !important; 
+  }
+  .sticky span span {
+    font-size: 2rem !important;
+  }
+  .section-2 {
+    font-size: 3rem !important;  
+  }
+  #experiences {
+    font-size: 3rem !important;
+  }
+  .anim-typewriter{
+    animation: typewriter 0s steps(44) 0.2s 1 normal backwards;}
+    @keyframes typewriter{
+    from{width: 0;}
+    to{width: 0em;}
+    }
+}
+
+.blinking-cursor {
+  font-weight: 100;
+  color: #2E3D48;
+  -webkit-animation: 1s blink step-end infinite;
+  -moz-animation: 1s blink step-end infinite;
+  -ms-animation: 1s blink step-end infinite;
+  -o-animation: 1s blink step-end infinite;
+  animation: 1s blink step-end infinite;
+}
+
+@keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: black;
+  }
+}
+
+@-moz-keyframes blink {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: black;
+  }
+}
+
+@-webkit-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: black;
+  }
+}
+
+@-ms-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: black;
+  }
+}
+
+@-o-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: black;
+  }
+}
+
+.typed-out{
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0%;
+  animation: 
+    typing 0.5s steps(20, end) forwards;
+  display:inline-block;
+}
+@keyframes typing {
+  from { width: 0% }
+  to { width: 100% }
+}
+
+img, a {
+  position: relative;
+  top: 0;
+  transition: top ease 0.5s;
+  border-radius: 20px;
+}
+img:hover {
+  top: -10px;
+}
+
+a:hover {
+  top: -5px;
+}
+
